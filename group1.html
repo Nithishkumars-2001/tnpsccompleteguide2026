@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>React Interview Questions & Answers | Beginner to Advanced</title>
+
+    <meta name="description"
+        content="Prepare for React interviews with the latest React interview questions and answers. Covers beginner, intermediate, and advanced React concepts, hooks, components, state, props, and performance optimization." />
+
+    <meta name="keywords"
+        content="react interview questions, react js interview questions, react interview questions and answers, react hooks interview questions, react coding interview, frontend interview questions, javascript react interview" />
+
+    <meta name="author" content="React Interview Guide">
+    <meta name="robots" content="index, follow">
+
+    <!--My css-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="icon" href="assets/img/company-logo.png" type="image/png">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: #323232;">
+
+    <!-- NavBar -->
+    <nav id="Navbar" class="navbar px-3 px-md-4 py-md-3">
+
+        <div class="website-name text-white">
+
+            <!-- Logo Icon -->
+            <div class="logo-img">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <!-- Website Title -->
+            <a href="index.html" style="text-decoration: none;">
+                <h2 class="logo-style ps-3">
+                    TNPSC GUIDE
+                </h2>
+            </a>
+
+        </div>
+
+        <!-- Menu Items -->
+        <div class="navbar-item">
+            <div class="navbar-menu pe-5">
+                <ul class="navbar-menu-links text-white">
+
+                    <a href="index.html">
+                        <li> முகப்பு </li>
+                    </a>
+
+                    <a href="group1.html">
+                        <li> Group 1 </li>
+                    </a>
+
+                    <a href="group2.html">
+                        <li> Group 2 </li>
+                    </a>
+
+                    <a href="group4.html">
+                        <li> Group 4 </li>
+                    </a>
+
+                    <a href="previous.html">
+                        <li> Previous Questions </li>
+                    </a>
+
+                    <a href="materials.html">
+                        <li> Study Materials </li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </nav>
+
+    <!-- Side Navbar -->
+    <aside class="side-navbar">
+
+        <!-- Close Icon -->
+        <p class="cross-symbol" onclick="closenavbar()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </p>
+
+        <div class="side-navbar-links">
+
+            <!-- Home -->
+            <p class="side-navbar-link">
+                <i class="fas fa-home"></i>
+                <a href="index.html"> முகப்பு </a>
+            </p>
+
+            <!-- Group 1 -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-user-tie"></i>
+                <a href="group1.html"> Group 1 </a>
+            </p>
+
+            <!-- Group 2 -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-users"></i>
+                <a href="group2.html"> Group 2 </a>
+            </p>
+
+            <!-- Group 4 -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <a href="group4.html"> Group 4 </a>
+            </p>
+
+            <!-- Previous Year -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-book-open"></i>
+                <a href="previous.html"> Previous Year </a>
+            </p>
+
+            <!-- Study Materials -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <a href="materials.html"> Study Materials </a>
+            </p>
+
+        </div>
+
+    </aside>
+
+    <!-- Page Header -->
+    <section class="page-header px-3">
+        <div class="page-header-content">
+            <h4>TNPSC GROUP 1</h4>
+            <h1>குரூப் 1 தேர்வு – முழுமையான தயாரிப்பு கேள்விகள் & வழிகாட்டி</h1>
+        </div>
+    </section>
+
+
+    <!-- Question & Answer -->
+    <div class="react-interview-question">
+        <div class="container">
+
+            <h3 class="header-title">TNPSC Group 1 – தேர்வு கேள்விகள் & பதில்கள்</h3>
+
+            <!-- Question 51 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans51">
+                    <span class="question-number">51</span>
+                    <h2 class="question-text">இந்திய அரசியலமைப்பின் தந்தை என்று அழைக்கப்படுபவர் யார்?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans51">
+                    <p><strong>பதில்:</strong> டாக்டர் பி.ஆர். அம்பேத்கர்</p>
+                </div>
+            </div>
+
+            <!-- Question 52 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans52">
+                    <span class="question-number">52</span>
+                    <h2 class="question-text">இந்திய அரசியலமைப்பு எத்தனை அட்டவணைகளை கொண்டுள்ளது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans52">
+                    <p><strong>பதில்:</strong> 12 அட்டவணைகள்</p>
+                </div>
+            </div>
+
+            <!-- Question 53 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans53">
+                    <span class="question-number">53</span>
+                    <h2 class="question-text">இந்தியாவின் முதல் பெண் பிரதமர் யார்?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans53">
+                    <p><strong>பதில்:</strong> இந்திரா காந்தி</p>
+                </div>
+            </div>
+
+            <!-- Question 54 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans54">
+                    <span class="question-number">54</span>
+                    <h2 class="question-text">சங்க இலக்கியங்கள் எந்த காலத்தைச் சேர்ந்தவை?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans54">
+                    <p><strong>பதில்:</strong> கிமு 300 – கிபி 300</p>
+                </div>
+            </div>
+
+            <!-- Question 55 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans55">
+                    <span class="question-number">55</span>
+                    <h2 class="question-text">இந்தியாவின் திட்டக்குழு (Planning Commission) எப்போது ரத்து செய்யப்பட்டது?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans55">
+                    <p><strong>பதில்:</strong> 2015</p>
+                </div>
+            </div>
+
+            <!-- Question 56 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans56">
+                    <span class="question-number">56</span>
+                    <h2 class="question-text">நீதித்துறையின் சுதந்திரத்தை உறுதி செய்யும் அரசியலமைப்பு அமைப்பு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans56">
+                    <p><strong>பதில்:</strong> உயர் நீதிமன்றம் & உச்ச நீதிமன்றம்</p>
+                </div>
+            </div>
+
+            <!-- Question 57 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans57">
+                    <span class="question-number">57</span>
+                    <h2 class="question-text">இந்தியாவில் அவசரநிலை அறிவிப்பதற்கான அதிகாரம் யாருக்கு உள்ளது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans57">
+                    <p><strong>பதில்:</strong> இந்திய குடியரசுத் தலைவர்</p>
+                </div>
+            </div>
+
+            <!-- Question 58 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans58">
+                    <span class="question-number">58</span>
+                    <h2 class="question-text">இந்தியாவில் மாநிலங்களின் எண்ணிக்கை எத்தனை? (தற்போது)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans58">
+                    <p><strong>பதில்:</strong> 28 மாநிலங்கள்</p>
+                </div>
+            </div>
+
+            <!-- Question 59 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans59">
+                    <span class="question-number">59</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் நீளமான நதி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans59">
+                    <p><strong>பதில்:</strong> காவிரி நதி</p>
+                </div>
+            </div>
+
+            <!-- Question 60 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans60">
+                    <span class="question-number">60</span>
+                    <h2 class="question-text">இந்தியாவின் உயர்ந்த குடிமக்கள் விருது எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans60">
+                    <p><strong>பதில்:</strong> பாரத் ரத்னா</p>
+                </div>
+            </div>
+
+            <!-- Question 61 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans61">
+                    <span class="question-number">61</span>
+                    <h2 class="question-text">இந்தியாவின் உச்ச நீதிமன்றம் எங்கு அமைந்துள்ளது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans61">
+                    <p><strong>பதில்:</strong> நியூ டெல்லி</p>
+                </div>
+            </div>
+
+            <!-- Question 62 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans62">
+                    <span class="question-number">62</span>
+                    <h2 class="question-text">இந்திய அரசியலமைப்பு எந்த நாட்டின் அரசியலமைப்பை அதிகமாக பாதிப்படைந்தது?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans62">
+                    <p><strong>பதில்:</strong> இங்கிலாந்து</p>
+                </div>
+            </div>
+
+            <!-- Question 63 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans63">
+                    <span class="question-number">63</span>
+                    <h2 class="question-text">“Quit India Movement” எப்போது தொடங்கப்பட்டது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans63">
+                    <p><strong>பதில்:</strong> 1942</p>
+                </div>
+            </div>
+
+            <!-- Question 64 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans64">
+                    <span class="question-number">64</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மிக உயரமான மலைச்சிகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans64">
+                    <p><strong>பதில்:</strong> தொட்டபெட்டா (Doddabetta)</p>
+                </div>
+            </div>
+
+            <!-- Question 65 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans65">
+                    <span class="question-number">65</span>
+                    <h2 class="question-text">இந்திய தேசிய கீதத்தை எழுதியவர் யார்?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans65">
+                    <p><strong>பதில்:</strong> ரவீந்திரநாத் தாகூர்</p>
+                </div>
+            </div>
+
+            <!-- Question 66 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans66">
+                    <span class="question-number">66</span>
+                    <h2 class="question-text">இந்தியாவில் “Green Revolution” யாரால் முன்னெடுக்கப்பட்டது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans66">
+                    <p><strong>பதில்:</strong> டாக்டர் எம்.எஸ். சுவாமிநாதன்</p>
+                </div>
+            </div>
+
+            <!-- Question 67 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans67">
+                    <span class="question-number">67</span>
+                    <h2 class="question-text">இந்தியாவின் முதல் செயற்கைக்கோள் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans67">
+                    <p><strong>பதில்:</strong> ஆர்யபட்டா</p>
+                </div>
+            </div>
+
+            <!-- Question 68 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans68">
+                    <span class="question-number">68</span>
+                    <h2 class="question-text">“World Bank” தலைமையகம் எங்கு உள்ளது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans68">
+                    <p><strong>பதில்:</strong> வாஷிங்டன் D.C.</p>
+                </div>
+            </div>
+
+            <!-- Question 69 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans69">
+                    <span class="question-number">69</span>
+                    <h2 class="question-text">இந்தியாவின் நீளமான நதி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans69">
+                    <p><strong>பதில்:</strong> கங்கை நதி</p>
+                </div>
+            </div>
+
+            <!-- Question 70 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans70">
+                    <span class="question-number">70</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள யுனெஸ்கோ உலக பாரம்பரிய சின்னம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans70">
+                    <p><strong>பதில்:</strong> தஞ்சாவூர் பெரிய கோவில்</p>
+                </div>
+            </div>
+
+            <!-- Question 71 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans71">
+                    <span class="question-number">71</span>
+                    <h2 class="question-text">இந்தியாவின் முதல் பெண் ஜனாதிபதி யார்?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans71">
+                    <p><strong>பதில்:</strong> பிரேஜ்வதி கோவிந்த்</p>
+                </div>
+            </div>
+
+            <!-- Question 72 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans72">
+                    <span class="question-number">72</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முதன்மைத் தொழில் நகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans72">
+                    <p><strong>பதில்:</strong> சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 73 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans73">
+                    <span class="question-number">73</span>
+                    <h2 class="question-text">இந்தியாவின் தலைநகர் நகராட்சி சட்டம் எப்போது பின்பற்றப்பட்டது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans73">
+                    <p><strong>பதில்:</strong> 1950</p>
+                </div>
+            </div>
+
+            <!-- Question 74 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans74">
+                    <span class="question-number">74</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள மிகப்பெரிய அணை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans74">
+                    <p><strong>பதில்:</strong> பெரியார் அணை</p>
+                </div>
+            </div>
+
+            <!-- Question 75 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans75">
+                    <span class="question-number">75</span>
+                    <h2 class="question-text">இந்தியாவின் முதல் பிரதமர் யார்?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans75">
+                    <p><strong>பதில்:</strong> ஜவஹர்லால் நெரு</p>
+                </div>
+            </div>
+
+            <!-- Question 76 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans76">
+                    <span class="question-number">76</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மாநில பறவை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans76">
+                    <p><strong>பதில்:</strong> மரகதப் புறா (Emerald Dove)</p>
+                </div>
+            </div>
+
+            <!-- Question 77 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans77">
+                    <span class="question-number">77</span>
+                    <h2 class="question-text">இந்தியாவில் முதன்மை நாடாளுமன்ற சட்டம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans77">
+                    <p><strong>பதில்:</strong> இந்திய அரசியலமைப்பு</p>
+                </div>
+            </div>
+
+            <!-- Question 78 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans78">
+                    <span class="question-number">78</span>
+                    <h2 class="question-text">இந்தியாவின் மிகப்பெரிய கோவில் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans78">
+                    <p><strong>பதில்:</strong> அன்னமலை அருணாசலேஸ்வரர் கோவில்</p>
+                </div>
+            </div>
+
+            <!-- Question 79 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans79">
+                    <span class="question-number">79</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள யுனெஸ்கோ உலக பாரம்பரிய இடம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans79">
+                    <p><strong>பதில்:</strong> மாமல்லபுரம் (Mahabalipuram)</p>
+                </div>
+            </div>
+
+            <!-- Question 80 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans80">
+                    <span class="question-number">80</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் மிக நீண்ட ரயில் பாதை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans80">
+                    <p><strong>பதில்:</strong> சென்னை → கோயம்புத்தூர்</p>
+                </div>
+            </div>
+
+            <!-- Question 81 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans81">
+                    <span class="question-number">81</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மிகப்பெரிய கோயில் நகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans81">
+                    <p><strong>பதில்:</strong> தஞ்சாவூர்</p>
+                </div>
+            </div>
+
+            <!-- Question 82 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans82">
+                    <span class="question-number">82</span>
+                    <h2 class="question-text">இந்தியாவின் முதல் விண்வெளி மையம் எங்கு அமைந்துள்ளது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans82">
+                    <p><strong>பதில்:</strong> திருவள்ளுவர் (Sriharikota / ISRO)</p>
+                </div>
+            </div>
+
+            <!-- Question 83 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans83">
+                    <span class="question-number">83</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள நீர்நிலைகள் அதிகம் எங்கு உள்ளது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans83">
+                    <p><strong>பதில்:</strong> மதுரை மாவட்டம்</p>
+                </div>
+            </div>
+
+            <!-- Question 84 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans84">
+                    <span class="question-number">84</span>
+                    <h2 class="question-text">இந்தியாவின் தேசிய செடி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans84">
+                    <p><strong>பதில்:</strong> பூமி செடி (Banyan Tree)</p>
+                </div>
+            </div>
+
+            <!-- Question 85 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans85">
+                    <span class="question-number">85</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மாநில விலங்கு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans85">
+                    <p><strong>பதில்:</strong> ஏன்டீலோப் (Nilgiri Tahr)</p>
+                </div>
+            </div>
+
+            <!-- Question 86 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans86">
+                    <span class="question-number">86</span>
+                    <h2 class="question-text">இந்தியாவின் தேசிய விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans86">
+                    <p><strong>பதில்:</strong> ஹாக்கி</p>
+                </div>
+            </div>
+
+            <!-- Question 87 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans87">
+                    <span class="question-number">87</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் மிகப்பெரிய அணை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans87">
+                    <p><strong>பதில்:</strong> பெரியார் அணை</p>
+                </div>
+            </div>
+
+            <!-- Question 88 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans88">
+                    <span class="question-number">88</span>
+                    <h2 class="question-text">இந்தியாவில் “Swachh Bharat Abhiyan” எப்போது தொடங்கப்பட்டது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans88">
+                    <p><strong>பதில்:</strong> 2 அக்டோபர் 2014</p>
+                </div>
+            </div>
+
+            <!-- Question 89 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans89">
+                    <span class="question-number">89</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மிக நீளமான நதி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans89">
+                    <p><strong>பதில்:</strong> காவிரி நதி</p>
+                </div>
+            </div>
+
+            <!-- Question 90 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans90">
+                    <span class="question-number">90</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள யுனெஸ்கோ உலக பாரம்பரிய இடம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans90">
+                    <p><strong>பதில்:</strong> மாமல்லபுரம் (Mahabalipuram)</p>
+                </div>
+            </div>
+
+            <!-- Question 91 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans91">
+                    <span class="question-number">91</span>
+                    <h2 class="question-text">இந்தியாவின் தேசிய விளிம்புச் செடி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans91">
+                    <p><strong>பதில்:</strong> பாம்பு மரம் (Neem)</p>
+                </div>
+            </div>
+
+            <!-- Question 92 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans92">
+                    <span class="question-number">92</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முதன்மை ஹார்பர் (Port) எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans92">
+                    <p><strong>பதில்:</strong> சென்னை துறைமுகம்</p>
+                </div>
+            </div>
+
+            <!-- Question 93 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans93">
+                    <span class="question-number">93</span>
+                    <h2 class="question-text">இந்தியாவின் முதல் பெண்கள் இந்திய விமான படை தலைவர் யார்?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans93">
+                    <p><strong>பதில்:</strong> விமானா சேனாபதி – அப்துல்லா சல்மா</p>
+                </div>
+            </div>
+
+            <!-- Question 94 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans94">
+                    <span class="question-number">94</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள மிகப்பெரிய உற்பத்தி மாநகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans94">
+                    <p><strong>பதில்:</strong> சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 95 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans95">
+                    <span class="question-number">95</span>
+                    <h2 class="question-text">இந்தியாவின் தேசிய விலங்கு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans95">
+                    <p><strong>பதில்:</strong> புலி</p>
+                </div>
+            </div>
+
+            <!-- Question 96 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans96">
+                    <span class="question-number">96</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முதன்மை மக்களுக்கு அணுக்கமான பெரிய கோவில் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans96">
+                    <p><strong>பதில்:</strong> சென்னை பாரதீஸ்வரர் கோவில்</p>
+                </div>
+            </div>
+
+            <!-- Question 97 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans97">
+                    <span class="question-number">97</span>
+                    <h2 class="question-text">இந்தியாவின் மிகப்பெரிய அரண் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans97">
+                    <p><strong>பதில்:</strong> ரானிகொண்டா அரண், கேரளா</p>
+                </div>
+            </div>
+
+            <!-- Question 98 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans98">
+                    <span class="question-number">98</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முதலமைச்சர் தற்போதைய பெயர் யார்? (2026)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans98">
+                    <p><strong>பதில்:</strong> மு.க.ஸ்டாலின்</p>
+                </div>
+            </div>
+
+            <!-- Question 99 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans99">
+                    <span class="question-number">99</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் உள்ள யுனெஸ்கோ உலக பாரம்பரிய நகரங்கள் எத்தனை?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans99">
+                    <p><strong>பதில்:</strong> 3 (மாமல்லபுரம், தஞ்சாவூர், திருச்சி)</p>
+                </div>
+            </div>
+
+            <!-- Question 100 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans100">
+                    <span class="question-number">100</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் தேசிய பறவை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans100">
+                    <p><strong>பதில்:</strong> செம்மெருகு (Emerald Dove)</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="loan-footer px-2">
+        <div class="container">
+            <div class="row">
+
+                <!-- About TNPSC -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h5 class="fw-bold">TNPSC Exam Questions Guide</h5>
+
+                    <p class="pe-0 pe-md-3">
+                        TNPSC தேர்விற்கான முழுமையான தயாரிப்பு தளம்.
+                        Group 1, Group 2, Group 4 மற்றும் பிற அரசு தேர்வுகளுக்கான
+                        முக்கிய கேள்விகள், பதில்கள், முந்தைய ஆண்டு வினாத்தாள்கள்
+                        மற்றும் படிப்புப் பொருட்கள் அனைத்தும் ஒரே இடத்தில் வழங்கப்படுகின்றன.
+                    </p>
+                </div>
+
+
+                <!-- TNPSC Exam Topics -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">TNPSC Exams</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Group 1 Exam</a></li>
+                        <li><a href="#">Group 2 Exam</a></li>
+                        <li><a href="#">Group 2A Exam</a></li>
+                        <li><a href="#">Group 4 Exam</a></li>
+                        <li><a href="#">VAO Exam</a></li>
+                    </ul>
+                </div>
+
+                <!-- Question Practice -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Question Practice</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Daily Questions</a></li>
+                        <li><a href="#">Model Question Papers</a></li>
+                        <li><a href="#">Previous Year Questions</a></li>
+                        <li><a href="#">Important Q&A</a></li>
+                        <li><a href="#">General Knowledge</a></li>
+                    </ul>
+                </div>
+
+                <!-- Study Materials -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Study Materials</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Tamil Notes</a></li>
+                        <li><a href="#">History Notes</a></li>
+                        <li><a href="#">Polity Notes</a></li>
+                        <li><a href="#">Geography Notes</a></li>
+                        <li><a href="#">Economics Notes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Exam Preparation -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Exam Preparation</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Preparation Tips</a></li>
+                        <li><a href="#">Study Plan</a></li>
+                        <li><a href="#">Time Table</a></li>
+                        <li><a href="#">Exam Strategy</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p>
+                    <i class="fa-regular fa-copyright"></i>
+                    2026 TNPSC தேர்வு கேள்விகள் வழிகாட்டி. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Question & Answer JS-->
+    <script>
+        document.querySelectorAll('.question-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

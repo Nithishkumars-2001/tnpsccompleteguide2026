@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>React Interview Questions & Answers | Beginner to Advanced</title>
+
+    <meta name="description"
+        content="Prepare for React interviews with the latest React interview questions and answers. Covers beginner, intermediate, and advanced React concepts, hooks, components, state, props, and performance optimization." />
+
+    <meta name="keywords"
+        content="react interview questions, react js interview questions, react interview questions and answers, react hooks interview questions, react coding interview, frontend interview questions, javascript react interview" />
+
+    <meta name="author" content="React Interview Guide">
+    <meta name="robots" content="index, follow">
+
+    <!--My css-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="icon" href="assets/img/company-logo.png" type="image/png">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: #323232;">
+
+    <!-- NavBar -->
+    <nav id="Navbar" class="navbar px-3 px-md-4 py-md-3">
+
+        <div class="website-name text-white">
+
+            <!-- Logo Icon -->
+            <div class="logo-img">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <!-- Website Title -->
+            <a href="index.html" style="text-decoration: none;">
+                <h2 class="logo-style ps-3">
+                    TNPSC GUIDE
+                </h2>
+            </a>
+
+        </div>
+
+        <!-- Menu Items -->
+        <div class="navbar-item">
+            <div class="navbar-menu pe-5">
+                <ul class="navbar-menu-links text-white">
+
+                    <a href="index.html">
+                        <li> முகப்பு </li>
+                    </a>
+
+                    <a href="group1.html">
+                        <li> Group 1 </li>
+                    </a>
+
+                    <a href="group2.html">
+                        <li> Group 2 </li>
+                    </a>
+
+                    <a href="group4.html">
+                        <li> Group 4 </li>
+                    </a>
+
+                    <a href="previous.html">
+                        <li> Previous Questions </li>
+                    </a>
+
+                    <a href="materials.html">
+                        <li> Study Materials </li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </nav>
+
+    <!-- Side Navbar -->
+    <aside class="side-navbar">
+
+        <!-- Close Icon -->
+        <p class="cross-symbol" onclick="closenavbar()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </p>
+
+        <div class="side-navbar-links">
+
+            <!-- Home -->
+            <p class="side-navbar-link">
+                <i class="fas fa-home"></i>
+                <a href="index.html"> முகப்பு </a>
+            </p>
+
+            <!-- Group 1 -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-user-tie"></i>
+                <a href="group1.html"> Group 1 </a>
+            </p>
+
+            <!-- Group 2 -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-users"></i>
+                <a href="group2.html"> Group 2 </a>
+            </p>
+
+            <!-- Group 4 -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <a href="group4.html"> Group 4 </a>
+            </p>
+
+            <!-- Previous Year -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-book-open"></i>
+                <a href="previous.html"> Previous Year </a>
+            </p>
+
+            <!-- Study Materials -->
+            <p class="side-navbar-link">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <a href="materials.html"> Study Materials </a>
+            </p>
+
+        </div>
+
+    </aside>
+
+    <!-- Page Header -->
+    <section class="page-header px-3">
+        <div class="page-header-content">
+            <h4>TNPSC Previous Questions</h4>
+            <h1>TNPSC Group 4 & 1 தேர்வில் கேட்கப்பட்ட முக்கிய TNPSC Study Material</h1>
+        </div>
+    </section>
+
+    <!-- Question & Answer -->
+    <div class="react-interview-question">
+        <div class="container">
+
+            <h3 class="header-title">
+                இந்த பகுதியில் 2025 TNPSC தேர்வில் கேட்கப்பட்ட கேள்விகள் மற்றும் பதில்கள் தொகுக்கப்பட்டுள்ளன.
+                கேள்விகள் மற்றும் பதில்களைப் படித்து,
+                முழுமையான தேர்வு பயிற்சியைச் செய்யலாம்.
+                இது Group 1, Group 2, Group 4 தேர்வுகளுக்கான முக்கிய TNPSC Study Material ஆகும்.
+            </h3>
+
+            <!-- Question 251 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans251">
+                    <span class="question-number">251</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முதன்மை அணைக்கல் ஏரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans251">
+                    <p><strong>பதில்:</strong> மேட்டூர் அணை</p>
+                </div>
+            </div>
+
+            <!-- Question 252 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans252">
+                    <span class="question-number">252</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய பழங்குடி மாவட்டம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans252">
+                    <p><strong>பதில்:</strong> காஞ்சிபுரம்</p>
+                </div>
+            </div>
+
+            <!-- Question 253 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans253">
+                    <span class="question-number">253</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய ஏரிகள் எவை?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans253">
+                    <p><strong>பதில்:</strong> மேலூர், பெரியாறு, வேலூர் ஏரிகள்</p>
+                </div>
+            </div>
+
+            <!-- Question 254 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans254">
+                    <span class="question-number">254</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய சுற்றுலா கோயில் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans254">
+                    <p><strong>பதில்:</strong> மதுரை மீனாட்சி அம்மன் கோயில்</p>
+                </div>
+            </div>
+
+            <!-- Question 255 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans255">
+                    <span class="question-number">255</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய இயற்கை வளம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans255">
+                    <p><strong>பதில்:</strong> காடுகள் மற்றும் நீர் வளங்கள்</p>
+                </div>
+            </div>
+
+            <!-- Question 256 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans256">
+                    <span class="question-number">256</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய தொழில்துறை மண்டலம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans256">
+                    <p><strong>பதில்:</strong> சேலம்</p>
+                </div>
+            </div>
+
+            <!-- Question 257 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans257">
+                    <span class="question-number">257</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய வர்த்தக நகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans257">
+                    <p><strong>பதில்:</strong> சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 258 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans258">
+                    <span class="question-number">258</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கலாச்சார விழா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans258">
+                    <p><strong>பதில்:</strong> திருவள்ளுவர் தினம்</p>
+                </div>
+            </div>
+
+            <!-- Question 259 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans259">
+                    <span class="question-number">259</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கல்வி நிறுவனம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans259">
+                    <p><strong>பதில்:</strong> சென்னை பல்கலைக்கழகம்</p>
+                </div>
+            </div>
+
+            <!-- Question 260 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans260">
+                    <span class="question-number">260</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய மருத்துவக் கல்லூரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans260">
+                    <p><strong>பதில்:</strong> அரசு மருத்துவக் கல்லூரி, சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 261 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans261">
+                    <span class="question-number">261</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய புகழ்பெற்ற கோயில் திருவிழா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans261">
+                    <p><strong>பதில்:</strong> பாம்புக்கோட்டை கோயில் திருவிழா</p>
+                </div>
+            </div>
+
+            <!-- Question 262 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans262">
+                    <span class="question-number">262</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முதன்மை நீரூற்று ஆற்றுகள் எவை?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans262">
+                    <p><strong>பதில்:</strong> காவிரி, தென்றை, பத்மநாபன்</p>
+                </div>
+            </div>
+
+            <!-- Question 263 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans263">
+                    <span class="question-number">263</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய தொழில்துறை மண்டலம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans263">
+                    <p><strong>பதில்:</strong> கோயம்புத்தூர்</p>
+                </div>
+            </div>
+
+            <!-- Question 264 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans264">
+                    <span class="question-number">264</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய வர்த்தக நகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans264">
+                    <p><strong>பதில்:</strong> சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 265 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans265">
+                    <span class="question-number">265</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய சுற்றுலா மலைப்பகுதி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans265">
+                    <p><strong>பதில்:</strong> ஊட்டி மலைகள்</p>
+                </div>
+            </div>
+
+            <!-- Question 266 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans266">
+                    <span class="question-number">266</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய இயற்கை வளம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans266">
+                    <p><strong>பதில்:</strong> காடுகள் மற்றும் நீர் வளங்கள்</p>
+                </div>
+            </div>
+
+            <!-- Question 267 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans267">
+                    <span class="question-number">267</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கல்வி நிறுவனம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans267">
+                    <p><strong>பதில்:</strong> சென்னை பல்கலைக்கழகம்</p>
+                </div>
+            </div>
+
+            <!-- Question 268 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans268">
+                    <span class="question-number">268</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய மருத்துவக் கல்லூரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans268">
+                    <p><strong>பதில்:</strong> அரசு மருத்துவக் கல்லூரி, சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 269 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans269">
+                    <span class="question-number">269</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கலாச்சார விழா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans269">
+                    <p><strong>பதில்:</strong> திருவள்ளுவர் தினம்</p>
+                </div>
+            </div>
+
+            <!-- Question 270 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans270">
+                    <span class="question-number">270</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய பாரம்பரிய விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans270">
+                    <p><strong>பதில்:</strong> ஜல்லிக்கட்டு</p>
+                </div>
+            </div>
+
+            <!-- Question 271 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans271">
+                    <span class="question-number">271</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய மாநகராட்சி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans271">
+                    <p><strong>பதில்:</strong> சென்னை மாநகராட்சி</p>
+                </div>
+            </div>
+
+            <!-- Question 272 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans272">
+                    <span class="question-number">272</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய வர்த்தக மையம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans272">
+                    <p><strong>பதில்:</strong> கோவை</p>
+                </div>
+            </div>
+
+            <!-- Question 273 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans273">
+                    <span class="question-number">273</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் புகழ்பெற்ற இயற்கை பூங்கா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans273">
+                    <p><strong>பதில்:</strong> மேட்டுப்பாளையம் அரண்மனை பூங்கா</p>
+                </div>
+            </div>
+
+            <!-- Question 274 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans274">
+                    <span class="question-number">274</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய நீர்வள அணை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans274">
+                    <p><strong>பதில்:</strong> மாடூர் அணை</p>
+                </div>
+            </div>
+
+            <!-- Question 275 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans275">
+                    <span class="question-number">275</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் முக்கிய விளையாட்டு பரிசோதனை மையம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans275">
+                    <p><strong>பதில்:</strong> சென்னை விளையாட்டு அரங்கம்</p>
+                </div>
+            </div>
+
+            <!-- Question 276 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans276">
+                    <span class="question-number">276</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய இயற்கை மலைப்பகுதி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans276">
+                    <p><strong>பதில்:</strong> மேற்கு கோடைக்கால் மலைகள்</p>
+                </div>
+            </div>
+
+            <!-- Question 277 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans277">
+                    <span class="question-number">277</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய சுற்றுலா கோயில் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans277">
+                    <p><strong>பதில்:</strong> திருச்சிராப்பள்ளி ராகவேந்திரசுவாமி கோயில்</p>
+                </div>
+            </div>
+
+            <!-- Question 278 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans278">
+                    <span class="question-number">278</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கல்வி நிறுவனம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans278">
+                    <p><strong>பதில்:</strong> அண்ணா பல்கலைக்கழகம், சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 279 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans279">
+                    <span class="question-number">279</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய மருத்துவக் கல்லூரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans279">
+                    <p><strong>பதில்:</strong> அரசு மருத்துவக் கல்லூரி, மதுரை</p>
+                </div>
+            </div>
+
+            <!-- Question 280 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans280">
+                    <span class="question-number">280</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய பாரம்பரிய விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans280">
+                    <p><strong>பதில்:</strong> சோழர் சண்டை (Silambam)</p>
+                </div>
+            </div>
+
+            <!-- Question 281 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans281">
+                    <span class="question-number">281</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் மிகப்பெரிய பாலம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans281">
+                    <p><strong>பதில்:</strong> கொயில்பட்டினம் பாலம்</p>
+                </div>
+            </div>
+
+            <!-- Question 282 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans282">
+                    <span class="question-number">282</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மிகப்பழமையான கோயில் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans282">
+                    <p><strong>பதில்:</strong> அருணாசலேஸ்வரர் கோயில், திருச்சி</p>
+                </div>
+            </div>
+
+            <!-- Question 283 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans283">
+                    <span class="question-number">283</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய சுற்றுலா நகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans283">
+                    <p><strong>பதில்:</strong> மல்லேபுரம்</p>
+                </div>
+            </div>
+
+            <!-- Question 284 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans284">
+                    <span class="question-number">284</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய இயற்கை பூங்கா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans284">
+                    <p><strong>பதில்:</strong> குருங்கா பூங்கா, ஊட்டி</p>
+                </div>
+            </div>
+
+            <!-- Question 285 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans285">
+                    <span class="question-number">285</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய நீரூற்று அணை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans285">
+                    <p><strong>பதில்:</strong> மேலூர் அணை</p>
+                </div>
+            </div>
+
+            <!-- Question 286 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans286">
+                    <span class="question-number">286</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கலாச்சார விழா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans286">
+                    <p><strong>பதில்:</strong> புறம்போக்கு திருவிழா, திருச்சி</p>
+                </div>
+            </div>
+
+            <!-- Question 287 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans287">
+                    <span class="question-number">287</span>
+                    <h2 class="question-text">தமிழ்நாட்டில் புகழ்பெற்ற பாரம்பரிய நாட்டு விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans287">
+                    <p><strong>பதில்:</strong> ஜல்லிக்கட்டு</p>
+                </div>
+            </div>
+
+            <!-- Question 288 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans288">
+                    <span class="question-number">288</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கல்வி நிறுவனம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans288">
+                    <p><strong>பதில்:</strong> அண்ணா பல்கலைக்கழகம், சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 289 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans289">
+                    <span class="question-number">289</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய மருத்துவக் கல்லூரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans289">
+                    <p><strong>பதில்:</strong> அரசு மருத்துவக் கல்லூரி, சேலம்</p>
+                </div>
+            </div>
+
+            <!-- Question 290 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans290">
+                    <span class="question-number">290</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் புகழ்பெற்ற பாரம்பரிய விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans290">
+                    <p><strong>பதில்:</strong> சோழர் சண்டை (Silambam)</p>
+                </div>
+            </div>
+
+            <!-- Question 291 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans291">
+                    <span class="question-number">291</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய தேசிய பூங்கா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans291">
+                    <p><strong>பதில்:</strong> முத்துகூர் தேசிய பூங்கா</p>
+                </div>
+            </div>
+
+            <!-- Question 292 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans292">
+                    <span class="question-number">292</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் மிகப்பெரிய ஏரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans292">
+                    <p><strong>பதில்:</strong> வேளாங்கண்ணி ஏரி</p>
+                </div>
+            </div>
+
+            <!-- Question 293 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans293">
+                    <span class="question-number">293</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய வர்த்தக நகரம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans293">
+                    <p><strong>பதில்:</strong> சென்னை</p>
+                </div>
+            </div>
+
+            <!-- Question 294 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans294">
+                    <span class="question-number">294</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் புகழ்பெற்ற மலைப்பகுதி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans294">
+                    <p><strong>பதில்:</strong> கூடைக்காடு மலைகள்</p>
+                </div>
+            </div>
+
+            <!-- Question 295 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans295">
+                    <span class="question-number">295</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய நீரூற்று அணை எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans295">
+                    <p><strong>பதில்:</strong> சேலம் அணை</p>
+                </div>
+            </div>
+
+            <!-- Question 296 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans296">
+                    <span class="question-number">296</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கலாச்சார விழா எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans296">
+                    <p><strong>பதில்:</strong> திருவிழா, மதுரை</p>
+                </div>
+            </div>
+
+            <!-- Question 297 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans297">
+                    <span class="question-number">297</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் புகழ்பெற்ற பாரம்பரிய விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans297">
+                    <p><strong>பதில்:</strong> ஜல்லிக்கட்டு</p>
+                </div>
+            </div>
+
+            <!-- Question 298 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans298">
+                    <span class="question-number">298</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய கல்வி நிறுவனம் எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans298">
+                    <p><strong>பதில்:</strong> சென்னை பல்கலைக்கழகம்</p>
+                </div>
+            </div>
+
+            <!-- Question 299 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans299">
+                    <span class="question-number">299</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய மருத்துவக் கல்லூரி எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans299">
+                    <p><strong>பதில்:</strong> அரசு மருத்துவக் கல்லூரி, திருச்சி</p>
+                </div>
+            </div>
+
+            <!-- Question 300 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans300">
+                    <span class="question-number">300</span>
+                    <h2 class="question-text">தமிழ்நாட்டின் முக்கிய பாரம்பரிய விளையாட்டு எது?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans300">
+                    <p><strong>பதில்:</strong> சோழர் சண்டை (Silambam)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="loan-footer px-2">
+        <div class="container">
+            <div class="row">
+
+                <!-- About TNPSC -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h5 class="fw-bold">TNPSC Exam Questions Guide</h5>
+
+                    <p class="pe-0 pe-md-3">
+                        TNPSC தேர்விற்கான முழுமையான தயாரிப்பு தளம்.
+                        Group 1, Group 2, Group 4 மற்றும் பிற அரசு தேர்வுகளுக்கான
+                        முக்கிய கேள்விகள், பதில்கள், முந்தைய ஆண்டு வினாத்தாள்கள்
+                        மற்றும் படிப்புப் பொருட்கள் அனைத்தும் ஒரே இடத்தில் வழங்கப்படுகின்றன.
+                    </p>
+                </div>
+
+
+                <!-- TNPSC Exam Topics -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">TNPSC Exams</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Group 1 Exam</a></li>
+                        <li><a href="#">Group 2 Exam</a></li>
+                        <li><a href="#">Group 2A Exam</a></li>
+                        <li><a href="#">Group 4 Exam</a></li>
+                        <li><a href="#">VAO Exam</a></li>
+                    </ul>
+                </div>
+
+                <!-- Question Practice -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Question Practice</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Daily Questions</a></li>
+                        <li><a href="#">Model Question Papers</a></li>
+                        <li><a href="#">Previous Year Questions</a></li>
+                        <li><a href="#">Important Q&A</a></li>
+                        <li><a href="#">General Knowledge</a></li>
+                    </ul>
+                </div>
+
+                <!-- Study Materials -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Study Materials</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Tamil Notes</a></li>
+                        <li><a href="#">History Notes</a></li>
+                        <li><a href="#">Polity Notes</a></li>
+                        <li><a href="#">Geography Notes</a></li>
+                        <li><a href="#">Economics Notes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Exam Preparation -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Exam Preparation</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Preparation Tips</a></li>
+                        <li><a href="#">Study Plan</a></li>
+                        <li><a href="#">Time Table</a></li>
+                        <li><a href="#">Exam Strategy</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p>
+                    <i class="fa-regular fa-copyright"></i>
+                    2026 TNPSC தேர்வு கேள்விகள் வழிகாட்டி. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"> </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Question & Answer JS-->
+    <script>
+        document.querySelectorAll('.question-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
